@@ -1,0 +1,3 @@
+# Causal model learning and individual queries
+`python3 demo.py` runs the existing complete-case observational regression and ordinary Gaussian conditioning. Python 3.11 and NumPy are required; SciPy and other numerical libraries are allowed for the extension. All data are synthetic. `train.json` contains observations, fixed-value randomized interventions and missing entries. Intervened values are recorded in both `do` and `values`, and must agree. `query.json` is a causal query to be implemented; the old demo only conditions observationally.
+No graph structure discovery or real intervention is requested. The task statement defines the bounded model and objective. Both learning with rows and queries on an external model are normal direct uses.
